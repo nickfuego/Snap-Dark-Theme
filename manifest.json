@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Snap! Dark Theme",
+  "description": "This extension is a Dark Theme for Berkeley Snap! (specifically, when Snap! has Flat Design enabled)",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+      "matches": ["http://snap.berkeley.edu/snapsource/snap.html*"],
+      "js": ["content.js"]
+    }],
+  "web_accessible_resources": ["script.js"]
+}
